@@ -36,7 +36,7 @@ public class Bug   {
 	public String getTitle() {
 		return title;
 	}
-	public void setTitre(String titre) {
+	public void setTitre(String title) {
 		this.title = title;
 	}
 	public String getStatus() {
