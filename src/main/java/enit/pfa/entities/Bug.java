@@ -9,17 +9,17 @@ public class Bug   {
 	@Id
 	@GeneratedValue
 	private int id ;
-	private String titre;
+	private String title;
 
+	private String status;
 
-	private String categorie;
 	private String description ;
 	private String projectname ;
 
-	public Bug(String titre, String categorie, String description, String projectname) {
+	public Bug(String title, String status, String description, String projectname) {
 		super();
-		this.titre = titre;
-		this.categorie = categorie;
+		this.title = title;
+		this.status = status;
 		this.description = description;
 		this.projectname = projectname;
 	}
@@ -33,17 +33,17 @@ public class Bug   {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getTitre() {
-		return titre;
+	public String getTitle() {
+		return title;
 	}
 	public void setTitre(String titre) {
-		this.titre = titre;
+		this.title = title;
 	}
-	public String getCategorie() {
-		return categorie;
+	public String getStatus() {
+		return status;
 	}
-	public void setCategorie(String categorie) {
-		this.categorie = categorie;
+	public void setStatus(String status) {
+		this.status = status;
 	}
 	public String getDescription() {
 		return description;
@@ -59,7 +59,7 @@ public class Bug   {
 	}
 	@Override
 	public String toString() {
-		return "Bug [id=" + id + ", titre=" + titre + ", categorie=" + categorie + ", description=" + description
+		return "Bug [id=" + id + ", title=" + title + ", status" + status + ", description=" + description
 				+ ", projectname=" + projectname + "]";
 	}
 	
