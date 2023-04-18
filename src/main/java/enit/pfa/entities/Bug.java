@@ -1,11 +1,13 @@
 package enit.pfa.entities;
 
+import java.io.Serializable;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
 @Entity
-public class Bug   {
+public class Bug implements Serializable  {
 	@Id
 	@GeneratedValue
 	private int id ;

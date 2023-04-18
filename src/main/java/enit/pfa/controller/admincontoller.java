@@ -34,7 +34,7 @@ public class admincontoller {
 	        adminservice.addAdmin(admin);
 	    }
 	 @PutMapping("/{id}")
-	    public void updateAdmin(@RequestBody Admin admin, @PathVariable Long id) {
+	    public void updateAdmin(@RequestBody Admin admin, @PathVariable int id) {
 	        admin.setId(id);
 	        adminservice.updateAdmin(admin);
 	    }
